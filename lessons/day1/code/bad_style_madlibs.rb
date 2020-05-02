@@ -2,8 +2,8 @@
 # Bad style example
 # susan evans
 # Last edited 11/25/2016
-# May be easier to read if 
 print "Welcome to my MadLib program. Please enter in some information below.\n\n" # Would be easier to puts instead of print with \n
+# Add whitespace between each instance of reading user input and assigning that input to a variable.
 print "name: "
 var1= gets.chomp # Variable name should describe the value. Needs space before operator.
 print "adjective: "
