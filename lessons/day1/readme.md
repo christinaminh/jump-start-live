@@ -49,17 +49,17 @@ _JumpStart Live (JSL)_
     ```
     
     ```ruby
-    # Generate a menu. Number of food items dictated by user input
-    # Create array with different foods
+    # Generate a menu. Number of food items dictated by user input.
+    # Array of different foods that can be on the menu.
     foods = ["shrimp", "cauliflower", "salmon", "garlic", "oysters",
     "salami", "tomatoes", "okra", "zucchini", "avocado"]
     
-    # Read in number of food items from the user
+    # Read in number of food items from the user.
     print "How many foods would you like to see on your menu? (I suggest 10, but it's up to you.):  "
     items = gets.chomp.to_i
     items.capitalize!
     
-    # Prints a message based on number from the user
+    # Prints a message based on number from the user.
     if items > 10
         puts "Best I can do is 10. Let's do 10."
         items = 10
@@ -70,7 +70,7 @@ _JumpStart Live (JSL)_
         items = 10
     end
     
-    # Prints a menu title
+    # Prints a menu title.
     puts "...Your Fancy Random Menu..."
     
     # Prints random items on the menu. Number of items was dictated by the user.
