@@ -32,18 +32,31 @@ y = x
 1. What is the value of x, after the following code is executed?
 
 	```ruby
+	# the value of 2 is assigned to the variable named x
 	x = 2
+	# the current value of x(2) is added with 3
+	# that sum is then assigned to the variable named x
 	x = x + 3
+	# the current value of x(5) is multiplied by 2
+	# that product is then assigned to the variable named x
 	x = x * 2
+	# the variable x stores the value of 10
 	```
 
 2. What are the values of x, and y, after the following code is executed?
 
 	```ruby
+	# the value of 3 is assigned to the variable named x
 	x = 3
+	# the value stored in x(3) is assigned to the variable named y
 	y = x
+	# 7 is subtracted from the current value of x(3)
+	# that difference is then assigned to the variable named x
 	x = x - 7
+	# 1 is subtracted from the current value of y(3)
+	# that difference is then assigned to the variable named y
 	y = y - 1
+	# the variable y stores the value of 2
 	```
 
 ### Compound Assignment Statements
