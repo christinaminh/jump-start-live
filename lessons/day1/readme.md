@@ -47,6 +47,38 @@ _JumpStart Live (JSL)_
     puts i.to_s+": "+y
     end
     ```
+    
+    ```ruby
+    # Generate a menu. Number of food items dictated by user input
+    # Create array with different foods
+    foods = ["shrimp", "cauliflower", "salmon", "garlic", "oysters",
+    "salami", "tomatoes", "okra", "zucchini", "avocado"]
+    
+    # Read in number of food items from the user
+    print "How many foods would you like to see on your menu? (I suggest 10, but it's up to you.):  "
+    items = gets.chomp.to_i
+    items.capitalize!
+    
+    # Prints a message based on number from the user
+    if items > 10
+        puts "Best I can do is 10. Let's do 10."
+        items = 10
+    elsif items >= 1 && items <= 10
+        puts "Ok! Let's do #{items}."
+    else
+        puts "We'll just pretend you said 10."
+        items = 10
+    end
+    
+    # Prints a menu title
+    puts "...Your Fancy Random Menu..."
+    
+    # Prints random items on the menu. Number of items was dictated by the user.
+    items.times do |num|
+        dish = foods[rand(0...(foods.length))]
+        puts "#{num}: #{dish.capitalize}"
+    end
+    ```
 
 1. Revisit your MadLibs code, and update your code to improve its style
 
