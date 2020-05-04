@@ -27,7 +27,7 @@ end
 ```ruby
 # 0, or 1 of the if blocks may execute
 # at most only 1 of the if blocks execute
-# it could be the case that 0 if blocks execute because their is no else
+# it could be the case that 0 if blocks execute because there is no else
 if test
   statement(s)
 elsif test 
@@ -86,7 +86,7 @@ end
 ```ruby
 grade = gets.chomp
 case grade
-when "A", "B", "C"
+when "A", "B", "C" # the , is the same as || (or). In other words, "A" or "B" or "C"
   puts "You passed"
 when "D"
   puts "You barely passed"
