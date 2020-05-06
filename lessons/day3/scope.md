@@ -54,7 +54,8 @@ list.each do |name|
 end
 
 puts name
-# Donald
+# Donald 
+# name was redefined inside the block as an iterator variable
 ```
 
 ```ruby
@@ -67,13 +68,13 @@ list.each do |name|
 end
 
 puts greeting
-#
 ```
 
 Output:
 
 ```bash
 Daisy birthday! 
+# greeting was not redefined??
 ```
 
 * In ruby, local variables created inside if statements, are visible outside of those if statements
