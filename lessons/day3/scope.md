@@ -36,6 +36,7 @@ list.each do |name|
 end
 
 puts name
+# "Donald"
 ```
 
 In Ruby, if a variable is redefined inside a block, that is a new variable with scope only inside that block.
