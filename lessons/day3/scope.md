@@ -25,8 +25,26 @@ You will not need to know about most of these until a few weeks into Ada, but it
 
 #### Examples
 
-* In ruby, local variables created outside of a block, are visible to everything inside of that file.  What does this print?
-	
+* In Ruby, local variables created outside of a block, are visible to everything inside of that file.  What does this print?
+
+```ruby
+puts "Name: "
+name = gets.chomp
+puts "Age: "
+num = gets.chomp.to_i
+
+while num > 0
+    num -= 1
+    name << " birthday!"
+end
+
+puts name
+# input "susan" and 10
+# susan birthday! birthday! birthday! birthday! birthday! birthday! birthday! birthday! birthday! birthday!
+```
+
+In Ruby, if a variable is redefined inside a block, that is a new variable with scope only inside that block.
+
 ```ruby
 list = ["Goofy", "Minnie", "Daisy"]
 name = "Donald"
@@ -36,10 +54,8 @@ list.each do |name|
 end
 
 puts name
-# "Donald"
+# Donald
 ```
-
-In Ruby, if a variable is redefined inside a block, that is a new variable with scope only inside that block.
 
 ```ruby
 list = ["Goofy", "Minnie", "Daisy"]
@@ -51,6 +67,7 @@ list.each do |name|
 end
 
 puts greeting
+#
 ```
 
 Output:
