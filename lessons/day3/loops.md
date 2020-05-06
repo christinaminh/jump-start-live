@@ -78,7 +78,8 @@ puts "Accepted thank you..."
 
 Times loops are always used for counter-based loops.  The number of executions can be determined by a constant number `3.times do` or using a varaible `x.times do`.
 
-* when `times` is used without an iteration variable it is a loop, when it is used with an iteration variable it becomes an iterator
+* When `times` is used without an iteration variable, it is a loop.
+* When `times` is used with an iteration variable, it becomes an iterator.
 * `times` must be associated with a block
 
 ```ruby
