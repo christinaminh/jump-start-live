@@ -84,7 +84,7 @@ Times loops are always used for counter-based loops.  The number of executions c
 
 ```ruby
 # times syntax as a loop with no iteration variable
-Integer.times
+Integer.times do
    code
 end
 ```
@@ -117,8 +117,26 @@ puts "Result: #{total}"
 
 ```
 1. inputs: 0, -1, 2
+# total | input | output
+#   0   |   0   |
+#   0   |  -1   |   0
+
 2. inputs: 33, 6, 2, 9, 0, -1
+# total | input | output
+#   0   |  33   |
+#  33   |   6   |  
+#  39   |   2   |  
+#  41   |   9   |  
+#  50   |   0   |  
+#  50   |  -1   |  50
+
 3. inputs: 4.2, 1.1, 9.9, -1.0
+# total | input | output
+#   0   |  4.2  |
+#  4.2  |  1.1  |  
+#  5.3  |  9.9  |  
+# 15.2  | -1.0  | 15.2  
+
 ```
 
 ### Resources
