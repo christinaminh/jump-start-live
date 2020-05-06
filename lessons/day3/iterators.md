@@ -82,6 +82,7 @@ end
 ```ruby
 # code example
 # prints out 0, 1, 2 each on its own line
+# 3 elements
 3.times do |num|
    puts num
 end
@@ -140,4 +141,6 @@ end
 2.times do |i|
   puts "dance"
 end
+# has an unnecessary iteration variable
+
 ```
