@@ -208,6 +208,7 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
 1. On paper, create an array which stores the names of people that inspire you. Then write down two different ways you can access the second-to-last name in your array?  
 
     ```ruby
+    inspirational_people = ["person", "person"]
     print inspirational_people[-2]
     print inspirational_people[inspirational_people.length-2]
     ```
@@ -215,8 +216,9 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
 1. On paper, create an array which stores the numbers 1 – 15. Then write down two different ways of accessing the middle number?  
 
     ```ruby
+    numbers = Array.new(15) { |i| i + 1 }
     print numbers[15 / 2]
-    (integer division will cut off / truncate anything after the decimal -> 15/2 = 7)
+    # integer division will cut off / truncate anything after the decimal -> 15/2 = 7
     print numbers[numbers.length / 2]
     ```
 
