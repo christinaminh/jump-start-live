@@ -54,13 +54,16 @@ list = Array.new
 
 # creates an array of length 3, storing nil in each index
 list = Array.new(3)
+# [nil, nil, nil]
 
 # creates an array of length 5, storing "Ada" in each index
 ada = Array.new(5, "Ada")
+# ["Ada", "Ada", "Ada", "Ada", "Ada"]
 
 # passes a block as a parameter
 # creating an array of multiples of 2, named mult2
 mult2 = Array.new(5) { |i| i * 2 }
+# d[0, 2, 4, 6, 8]
 ```
 
 ### Printing an Array
@@ -179,7 +182,14 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
       list.push(i * i)
     end
     ```
-
+    
+    ```ruby
+    list = []
+    (2..5).each do |i|
+      list.push(i ** 2)
+    end
+    ```
+    
     ```ruby
     list = Array.new(4) { |i| (i + 2) * (i + 2) }
     ```
@@ -188,7 +198,8 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
 
     ```ruby
     people = ["Ada Lovelace", "Annie Easley", "Margaret Hamilton"]
-    people << "Grace Hopper"
+    people << "Grace Hopper" 
+    # or people.push("Grace Hopper")
     puts people[1] # outputs Annie Easley
     people[0] = "Megan Smith"
     # list is now ["Megan Smith", "Annie Easley", "Margaret Hamilton", "Grace Hopper"]
@@ -196,9 +207,25 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
 
 1. On paper, create an array which stores the names of people that inspire you. Then write down two different ways you can access the second-to-last name in your array?  
 
+    ```ruby
+    print inspirational_people[-2]
+    print inspirational_people[inspirational_people.length-2]
+    ```
+
 1. On paper, create an array which stores the numbers 1 – 15. Then write down two different ways of accessing the middle number?  
 
+    ```ruby
+    print numbers[15 / 2]
+    (integer division will cut off / truncate anything after the decimal -> 15/2 = 7)
+    print numbers[numbers.length / 2]
+    ```
+
 1. On paper, write code that will create an array named powers_of_2, and stores the fist 10 powers of 2
+
+    ```ruby
+    powers_of_2 = Array.new(10) { |i| i ** 2 }
+    ```
+
 
 ### Resources
 * [Ada Arrays Video](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5fb869d2-db52-4cd2-a1cc-238e0e084fa5) (15:34)
