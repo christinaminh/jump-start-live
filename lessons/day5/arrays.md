@@ -225,7 +225,7 @@ nums.each_with_index { |num, index| puts "#{index}: #{num}" }
 1. On paper, write code that will create an array named powers_of_2, and stores the fist 10 powers of 2
 
     ```ruby
-    powers_of_2 = Array.new(10) { |i| i ** 2 }
+    powers_of_2 = Array.new(10) { |i| 2 ** i }
     ```
 
 
