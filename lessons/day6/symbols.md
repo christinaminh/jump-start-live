@@ -19,6 +19,8 @@ _JumpStart Live (JSL)_
 
 ### Convert string to symbol
 
+Important when you want to take input from a user and turn it into a symbol.
+
 ```ruby
 "apple".to_sym # creates an :apple symbol
 ```
