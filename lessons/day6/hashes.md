@@ -112,6 +112,17 @@ _We will complete these examples in pairs on paper_
   state_abbreviations.each_key { |name| puts name }
   state_abbreviations.each_value { |abbreviation| puts abbreviation }
   state_abbreviations.each { |name, abbreviation| puts "The abbreviation for #{name} is #{abbreviation}." }
+  # Washington
+  # California
+  # Oregon
+  # Nevada
+  # WA
+  # CA
+  # OR
+  # NV
+  # The abbreviation for Washington is WA.
+  # The abbreviation for California is CA.
+  # The abbreviation for Oregon is OR.
   ```
 
 2. We want to be able to quickly determine the amount of different types of food items you have in your house.
@@ -137,6 +148,10 @@ _We will complete these examples in pairs on paper_
   ```ruby
   food_inventory = {oranges: 5, apples: 4, cereal: 10, sparkling_water: 30}
   food_inventory.each { |food, quantity| puts "#{quantity} #{food}" }
+  # 5 oranges
+  # 4 apples
+  # 10 cereal
+  # 30 sparkling_water
   ```
 
 ### Resources
