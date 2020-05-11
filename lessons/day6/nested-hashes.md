@@ -130,6 +130,22 @@ How would you organize the data below in Ruby:
 4|Condo|Patience Phillips|2016-01-02|2016-01-03
 5|Townhouse|Wanda Maximoff|2016-01-06|2016-01-14
 
+```ruby
+guest = {
+    1: {
+        property: "Condo",
+        guest_name: "Marie D'Ancanto"
+        check_in: "2014-08-14"
+        check_out: "2014-08-16"
+    }
+    2: {
+        property: "Townhouse"
+        guest_name: "Barbara Wilson"
+        check_in: "2014-09-20"
+        check_out: "2014-09-21"
+    }
+}
+```
 
 
 ### Resources
