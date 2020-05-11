@@ -120,17 +120,13 @@ classes[:clusters] << "Christine Martin"
 new {|hash, key| block } → new_hash
 
 This creates a new default object each time
-
+```ruby
 h = Hash.new { |hash, key| hash[key] = "Go Fish: #{key}" }
-
 h["c"]           #=> "Go Fish: c"
-
 h["c"].upcase!   #=> "GO FISH: C"
-
 h["d"]           #=> "Go Fish: d"
-
 h.keys           #=> ["c", "d"]
-
+```
 
 ### Design Exercise
 
