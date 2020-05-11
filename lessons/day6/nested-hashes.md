@@ -116,6 +116,17 @@ classes[:clusters] << "Christine Martin"
 ```
 </details>
 
+### New Hash
+new {|hash, key| block } → new_hash
+
+This creates a new default object each time
+h = Hash.new { |hash, key| hash[key] = "Go Fish: #{key}" }
+h["c"]           #=> "Go Fish: c"
+h["c"].upcase!   #=> "GO FISH: C"
+h["d"]           #=> "Go Fish: d"
+h.keys           #=> ["c", "d"]
+
+
 ### Design Exercise
 
 Your instructor, Ada, is running a short-term rental property and wants to keep track of their guests.  Each guest has a name, id number, check-in date and check-out date (strings).  Ada has two rental properties a condo and a townhouse.
