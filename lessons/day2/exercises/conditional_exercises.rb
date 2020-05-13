@@ -1,4 +1,4 @@
-# Prompt for a number. If the number is greater than 70, print PASSING; otherwise, print NOT PASSING.
+# puts "Prompt for a number. If the number is greater than 70, print PASSING; otherwise, print NOT PASSING."
 # print "Enter a number: "
 # num = gets.chomp.to_i
 
@@ -12,7 +12,7 @@
 # end
 
 
-# Prompt for a string. If the string is equal to green, print GO, otherwise, print STOP.
+# puts "Prompt for a string. If the string is equal to green, print GO, otherwise, print STOP."
 # print "Enter a string: "
 # string = gets.chomp
 
@@ -25,7 +25,7 @@
 # end
 
 
-# Prompt for a number. If the number is even, print EVEN, otherwise, print ODD.
+# puts "Prompt for a number. If the number is even, print EVEN, otherwise, print ODD."
 # print "Enter a number: "
 # num = gets.chomp.to_i
 
@@ -38,7 +38,7 @@
 # end
 
 
-# Prompt for a number. If the number is evenly divisible by 5, print MULTIPLE OF 5, otherwise, print NOT A MULTIPLE OF 5.
+# puts "Prompt for a number. If the number is evenly divisible by 5, print MULTIPLE OF 5, otherwise, print NOT A MULTIPLE OF 5."
 # print "Enter a number: "
 # num = gets.chomp.to_i
 
@@ -51,7 +51,7 @@
 # end
 
 
-# Prompt for a number. If the number is less than 10, print ONE DIGIT. If the number is 100 or greater, print THREE DIGITS, otherwise print TWO DIGITS.
+# puts "Prompt for a number. If the number is less than 10, print ONE DIGIT. If the number is 100 or greater, print THREE DIGITS, otherwise print TWO DIGITS."
 # print "Enter a number: "
 # num = gets.chomp.to_i
 
@@ -67,7 +67,7 @@
 # end
 
 
-# Prompt for a jersey number. If that number is 12, 71, or 80, print That number is retired from the Seattle Seahawks!, otherwise do nothing.
+# puts "Prompt for a jersey number. If that number is 12, 71, or 80, print That number is retired from the Seattle Seahawks!, otherwise do nothing."
 # print "Enter a jersey number: "
 # num = gets.chomp.to_i
 
@@ -84,7 +84,7 @@
 # end
 
 
-# Prompt for a state. If the state is Washington, Oregon, or Idaho, print This state is in the PNW, otherwise print You should move to the PNW; it’s great here!
+# puts "Prompt for a state. If the state is Washington, Oregon, or Idaho, print This state is in the PNW, otherwise print You should move to the PNW; it’s great here!"
 # print "Enter a state: "
 # state = gets.chomp.capitalize
 
@@ -107,7 +107,7 @@
 # end
 
 
-# Prompt for a one of the following: SHORT, TALL, GRANDE, VENTI. Print out the number of ounces that drink includes (8, 12, 16, 20 respectively).
+# puts "Prompt for a one of the following: SHORT, TALL, GRANDE, VENTI. Print out the number of ounces that drink includes (8, 12, 16, 20 respectively)."
 # puts "What size beverage would you like? (SHORT, TALL, GRANDE, VENTI)"
 # size = gets.chomp.upcase
 
@@ -123,7 +123,7 @@
 # end
 
 
-# Prompt for rate of pay and hours worked. Calculate gross pay. Provide time-and-a-half for hours worked beyond 40 (e.g., if you get paid $10/hr and work 45 hours in a week, you would gross $475 (40 x 10 + 5 x 15).
+# puts "Prompt for rate of pay and hours worked. Calculate gross pay. Provide time-and-a-half for hours worked beyond 40 (e.g., if you get paid $10/hr and work 45 hours in a week, you would gross $475 (40 x 10 + 5 x 15)."
 # print "Enter rate of pay: "
 # rate = gets.chomp.to_i
 
@@ -142,7 +142,7 @@
 # end
 
 
-# Rewrite the solution to the previous problem adding this modification: do not process any employee if their hours worked is greater than 60, instead display the message Please see manager.
+# puts "Rewrite the solution to the previous problem adding this modification: do not process any employee if their hours worked is greater than 60, instead display the message Please see manager."
 
 print "Enter rate of pay: "
 rate = gets.chomp.to_i
