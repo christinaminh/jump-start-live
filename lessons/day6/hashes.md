@@ -98,13 +98,43 @@ _We will complete these examples in pairs on paper_
 1. We want to be able to quickly determine the state abbreviation for the states in the United States. 
 
   Determine whether it is best to use an array or a hash, and create it storing at least 4 states and their abbreviations.
-
+    
+  It is best to use a hash because you would need to store pairs of states and their abbreviations.
+  
+  ```ruby
+  state_abbreviations = { Washington: "WA", California: "CA", Oregon: "OR", Nevada: "NV" }
+  ```
+  
   Then write code to print out only the states, then only the abbreviations, and finally nicely formatted output displaying both the states and their abbreviations (e.g., The abbreviation for Nebraska is NE)
+  
+  ```ruby
+  state_abbreviations = { Washington: "WA", California: "CA", Oregon: "OR", Nevada: "NV" }
+  state_abbreviations.each_key { |name| puts name }
+  state_abbreviations.each_value { |abbreviation| puts abbreviation }
+  state_abbreviations.each { |name, abbreviation| puts "The abbreviation for #{name} is #{abbreviation}." }
+  # Washington
+  # California
+  # Oregon
+  # Nevada
+  # WA
+  # CA
+  # OR
+  # NV
+  # The abbreviation for Washington is WA.
+  # The abbreviation for California is CA.
+  # The abbreviation for Oregon is OR.
+  ```
 
 2. We want to be able to quickly determine the amount of different types of food items you have in your house.
 
   Determine whether it is best to use an array or a hash, and create it storing at least 4 food items and their quantities.
-
+  
+  It is best to use a hash because you want to store pairs of food items and their respective quantities.
+  
+  ```ruby
+  food_inventory = {oranges: 5, apples: 4, cereal: 10, sparkling_water: 30}
+  ```
+  
   Then write code to print out all the items and their quantities using nicely formatted output.
 
   ```bash
@@ -113,6 +143,15 @@ _We will complete these examples in pairs on paper_
   12 Tortillas
   1 Cookie
   4 Popsicles
+  ```
+  
+  ```ruby
+  food_inventory = {oranges: 5, apples: 4, cereal: 10, sparkling_water: 30}
+  food_inventory.each { |food, quantity| puts "#{quantity} #{food}" }
+  # 5 oranges
+  # 4 apples
+  # 10 cereal
+  # 30 sparkling_water
   ```
 
 ### Resources

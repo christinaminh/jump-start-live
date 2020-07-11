@@ -51,14 +51,17 @@ A boolean expression is an expression that evaluates to either `true` or `false`
 if 2
 	puts "2 is truthy"
 end
+# 2 is truthy
 
 if 'hello'
 	puts "\"hello\" is truthy"
 end
+# "hello" is truthy
 
 if !nil
 	puts "nil is falsey"
 end
+# nil
 ```
 
 ### Logical operators
@@ -86,8 +89,10 @@ end
 #### DeMorgan's Laws
 
 Named after Augustus De Morgan, a 19th-century British mathematician, they are a set of rules that describe what happens when you perform a negation on a `&&` statement, or an `||` statement.
-* `!(p && q)` can also be described as `!p || !q`
+* `!(p && q)` can also be described as `!p || !q` 
 * `!(p || q)` can also be described as `!p && !q`
+
+Easier to read `!p || !q` and `!p && !q`
 
 #### Short Circuit Evaluation
 

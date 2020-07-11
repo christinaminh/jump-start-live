@@ -86,7 +86,7 @@ end
 ```ruby
 grade = gets.chomp
 case grade
-when "A", "B", "C"
+when "A", "B", "C" # the , is the same as || (or). In other words, "A" or "B" or "C"
   puts "You passed"
 when "D"
   puts "You barely passed"
@@ -111,6 +111,8 @@ end
   if test_score > 90
     print "You got an A!"
   end
+  # 91 will print "You got an A!"
+  # 90 will not print anything
   ```
 
 2. `if`/`else` statement
@@ -137,6 +139,9 @@ end
   else
     puts "You did not get an A!"
   end
+  # Difference is test_score != 90 and test_score > 90. They will not work the same.
+  # For example, 89 is not equal to 90 but is not greater than 90. 
+  # For if test_score != 90, even inputing a string will evaluate to true.
   ```
 
 3. `if`/`else` statement
@@ -163,6 +168,9 @@ end
   else
     puts "You did not get an A!"
   end
+  # Difference is test_score < 90 and test_score > 90. 
+  # They will not work in the same way if test_score is 90. 
+  # One will print "You got an A!" and the other will print "You did not get an A!"
   ```
 
 4. `if`/`elsif`/`else` statement
@@ -182,6 +190,9 @@ end
   else
     puts "Mail!"
   end
+  # FedEx will print "Federal Express"
+  # usps will print "Mail!" because case matters
+  # mailing will print "Mail!" because none of the if and elsif tests did not evaluate true
   ```
 
 ### Resources
